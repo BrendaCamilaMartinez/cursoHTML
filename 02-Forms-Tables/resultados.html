@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle>
+            resultados
+        </tittle>
+    </head>
+    <body>
+        <h3> esto son los resultados</h3>
+        <div id="resultados"></div>
+        <a href="/02-Forms-Tables/formularios.html">Volver a formularios</a>
+    </body>
+    <script>
+        //codigo en js para mostrar los resultados
+        const resDiv = document.getElementById("resultados")
+        new URLSearchParams(window.location.search).forEach((val, name) => {
+            resDiv.append(`${name}: ${val}`)
+            resDiv.append(document.createElement('br'))
+        })
+    </script>
+</html>

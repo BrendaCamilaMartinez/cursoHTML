@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaios</title>
+</head>
+<body>
+   <form action="resultados.html" method="get">
+    <div>
+         <label for="nombredeusuario"> nombre de usuario</label>
+        <input type="text" name="nombredeusuario" id="nombredeusurio" required/>
+    </div>
+    <br>
+    <div>
+       <label for="password"> Contrasenia</label>
+       <!--"REQUIRED" hece que si o i se tenga q llenar el campo para continuar 
+        "TIPE="PASSWORD" hace ue la contrasenia se vea de forma encriptada ( ....)-->
+        <input type="password" name="password" id="password" required/>
+    </div>
+    <br>
+    <div>
+        <label for="emal">cual es tu email</label>
+       <input type="email" name="email" id="email" />
+   </div>
+    <br>
+    <div>
+        <label for="edad"> cual es tu edad?</label>
+       <input type="number" name="edad" id="edad" min="17" max="68" />
+   </div>
+   <br>
+   <div>
+    <!--calendario-->
+    <label for="nacimiento"> nacimiento</label>
+   <input type="date" name="nacimiento" id="nacimiento"  />
+</div>
+<br>
+    <div>
+        <label for="comentarios">comentarios</label>
+        <textarea name="comntarios" id="cometarios"></textarea>
+    </div>
+    <br>
+        <button type="reset">reset</button>
+        <button type="submit">Enviar</button>
+     </form>
+    </body>
+</html>
